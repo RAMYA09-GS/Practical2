@@ -1,20 +1,20 @@
-public class ReverseNumber 
+public class ReverseString 
 {
     	public static void main(String[] args) 
 	{
         
-        	int number = 12345; 
-        	int reversedNumber = 0;
-
+        	String original = "Hello, World!";
         
-        	for (int temp = number; temp > 0; temp /= 10) 
+        
+        	String reversed = "";
+
+      
+        	for (int i = original.length() - 1; i >= 0; i--) 	
 		{
-            		int digit = temp % 10; 
-            		reversedNumber = reversedNumber * 10 + digit; 
+           	 	reversed += original.charAt(i);
         	}
 
-        
-        	System.out.println("Original number: " + number);
-        	System.out.println("Reversed number: " + reversedNumber);
+  
+        	System.out.println("Reversed String: " + reversed);
     	}
 }
